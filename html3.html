@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website.html</title>
+  <style>
+     .bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #7fc8dc, #71ada0); /* Blurred gradient background */
+            filter: blur(20px); /* Adjust the blur amount as needed */
+            z-index: -1; /* Place the background behind the content */
+        }
+    /* Basic styling */
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top navigation menu */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Button tween effect */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Tab content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      animation: fadeEffect 1s; /* Add a fade-in animation */
+    }
+
+    /* Keyframes for the fade-in animation */
+    @keyframes fadeEffect {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    
+  </style>
+  <head>
+    <link rel="stylesheet" href="Style_Button.css">
+    <link rel = "icon" href = "https://i.ibb.co/sFmmcNx/good.png" 
+        type = "image/x-icon">
+  </head>
+</head>
+<body>
+
+
+  <div class="bg-container"></div>
+<!-- Top navigation menu -->
+<div class="topnav">
+  <a href="javascript:void(0);" onclick="openTab('home')">Home</a>
+  <a href="javascript:void(0);" onclick="openTab('about')">เกี่ยวกับพวกเรา</a>
+</div>
+
+<!-- Tab content sections -->
+<div class="tab-content" id="home">
+  <h2>Home</h2>
+  <p>Welcome to our website!</p>
+  <div class="Security">
+    <div class="main-text">About Security</div>
+    <div class="description-text">Experience a new level of digital security with tp-round.net. Our comprehensive security solutions are designed to protect you and your data, ensuring peace of mind as you navigate the online world. Trust in tp-round.net for top-notch security and privacy.</div>
+  </div>
+  <div class="idk">
+    <div class="main-text2">vr</div>
+    <div class="description-text2">hm</div>
+  </div>
+</div>
+
+<div class="tab-content" id="about">
+  <h2>เกี่ยวกับพวกเรา</h2>
+  <p></p>
+  <p2>
+      &copy; 2023 . All rights reserved.
+  </p2>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i;
+  var tabContent = document.getElementsByClassName("tab-content");
+
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Display the selected tab with the fade-in effect
+  var selectedTab = document.getElementById(tabName);
+  selectedTab.style.display = "block";
+}
+</script>
+
+</body>
+</html>

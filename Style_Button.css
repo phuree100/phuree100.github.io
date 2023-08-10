@@ -1,0 +1,71 @@
+/* Safe
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+/* Container for the square */
+.Security {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 170px;
+  background-image: linear-gradient(135deg, #1cb5e0, #00b78e); /* Blurred gradient background */
+  background-color: rgba(0, 0, 0, 0.5); /* Additional color overlay for blur effect */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Slightly lighter version of the background color */
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* Space before the text */
+  color: white;
+  text-align: left;
+}
+/* Main text */
+.main-text {
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size */
+  margin-bottom: 5px; /* Space after the main text */
+}
+
+.description-text {
+  font-size: 16px; /* Adjust the font size */
+  margin-bottom: 5px; /* Space after the description text */
+}
+
+/* idk Button
+
+body {
+  font-family: Arial, sans-serif;
+}
+/* Container for the square */
+.idk {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 170px;
+    background-image: linear-gradient(135deg, #1cb5e0, #00b78e); /* Blurred gradient background */
+    background-color: rgba(0, 0, 0, 0.5); /* Additional color overlay for blur effect */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Slightly lighter version of the background color */
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Space before the text */
+    color: white;
+    text-align: left;
+  }
+  /* Main text */
+.main-text2 {
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size */
+  margin-bottom: 5px; /* Space after the main text */
+}
+
+.description-text2 {
+  font-size: 16px; /* Adjust the font size */
+  margin-bottom: 5px; /* Space after the description text */
+}
